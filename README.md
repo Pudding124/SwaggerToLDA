@@ -7,14 +7,20 @@ The purpose of this project is to analyze API swagger, Find the most relevant wo
 There are different ways to deal with different content, we have two different things, Resource and Operations.
 #### Resource
 > $.info.title
+
 > $.info.description
+
 > $.info.x-tag
 
 #### Operations
 > $.paths.{path_name}
+
 > $.paths.{path_name}.{action}
+
 > $.paths.{path_name}.{action}.description
+
 > $.paths.{path_name}.{action}.operationId
+
 > $.paths.{path_name}.{action}.summary
 
 ## Latent Dirichlet Allocation (LDA)
