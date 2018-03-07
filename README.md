@@ -5,12 +5,12 @@ The purpose of this project is to analyze API swagger, Find the most relevant wo
 
 ## Swagger Content
 There are different ways to deal with different content, we have two different things, Resource and Operations.
-- ####Resource
+####Resource
 >$.info.title
 >$.info.description
 >$.info.x-tag
 
-- ####Operations
+####Operations
 >$.paths.{path_name}
 >$.paths.{path_name}.{action}
 >$.paths.{path_name}.{action}.description
