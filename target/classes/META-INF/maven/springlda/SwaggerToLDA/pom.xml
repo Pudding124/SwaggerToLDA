@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>springlda</groupId>
+	<artifactId>SwaggerToLDA</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>SwaggerToLDA</name>
+	<description>Swagger analysis into LDA</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.10.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- SpringFox -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+		<!-- WordNet https://mvnrepository.com/artifact/edu.mit/jwi -->
+		<dependency>
+		    <groupId>edu.mit</groupId>
+		    <artifactId>jwi</artifactId>
+		    <version>2.2.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>net.sf.jwordnet</groupId>
+		    <artifactId>jwnl</artifactId>
+		    <version>1.4_rc3</version>
+		</dependency>
+		<!-- Term parsing -->
+		<dependency>
+        	<groupId>org.apache.lucene</groupId>
+        	<artifactId>lucene-core</artifactId>
+        	<version>5.2.1</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.apache.lucene</groupId>
+	        <artifactId>lucene-analyzers-common</artifactId>
+	        <version>5.2.1</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.apache.lucene</groupId>
+	        <artifactId>lucene-queryparser</artifactId>
+	        <version>5.2.1</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.apache.lucene</groupId>
+	        <artifactId>lucene-queries</artifactId>
+	        <version>5.2.1</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.apache.lucene</groupId>
+	        <artifactId>lucene-test-framework</artifactId>
+	        <version>5.2.1</version>
+	    </dependency>
+	<!-- swagger.io -->
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-parser</artifactId>
+			<version>1.0.34</version>
+		</dependency>
+	<!-- https://mvnrepository.com/artifact/cc.mallet/mallet -->
+		<dependency>
+	    	<groupId>cc.mallet</groupId>
+		    <artifactId>mallet</artifactId>
+		    <version>2.0.7</version>
+		</dependency>
+	<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+		    <artifactId>gson</artifactId>
+		    <version>2.3</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
