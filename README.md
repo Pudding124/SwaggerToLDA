@@ -30,8 +30,19 @@ latent Dirichlet allocation (LDA) is a generative statistical model that allows 
 
 ## WordNet
 WordNet is a lexical database for the English language.
-
 [https://en.wikipedia.org/wiki/WordNet](https://en.wikipedia.org/wiki/WordNet)
+
+you need to download the WordNet 2.1 or WordNet 3.0 in here
+[https://wordnet.princeton.edu/download/current-version](https://wordnet.princeton.edu/download/current-version)
+(notice: Don't forget, You must change the file path of the WordNet program)
+
+```bash
+#in WordNetExpansion row 53
+private String wordNetPath = "/Users/xumingjen/WordNet-3.0/dict"; // "/home/mis101bird/WordNet/dict";
+
+#in wordnet_config.xml row 42
+<param name="dictionary_path" value="/Users/xumingjen/WordNet-3.0/dict"/>
+```
 
 ## Example
 You can use JSON or YMAL as your input data,then post it to http://localhost:8080/send/swagger
