@@ -59,9 +59,10 @@ Also, you can post only URL to http://localhost:8080/send/swaggerURL
 
 ## API Online
 There is a online api (but no WordNet, Only LDA parse word) --> [https://parse-swagger-topic.herokuapp.com/](https://parse-swagger-topic.herokuapp.com/)
-It hava two mapping
 
 ```bash
+It hava two mapping.
+
 #You can put your swagger file (json or yaml), then it can work for you
 https://parse-swagger-topic.herokuapp.com/send/swagger
 
