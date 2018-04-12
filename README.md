@@ -1,4 +1,4 @@
-# API Swagger analyze
+# API Swagger analysis
 
 Dear All:
 The purpose of this project is to analyze API swagger, Find the most relevant words based on the content, then use the words expand to more word.
